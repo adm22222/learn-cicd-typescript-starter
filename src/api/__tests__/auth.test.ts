@@ -35,10 +35,4 @@ describe("getAPIKey", () => {
         };
         expect(getAPIKey(headers)).toBeNull();
     });
-    test("fail test", () => {
-        const headers: IncomingHttpHeaders = {
-        authorization: "ApiKey my-secret-key"
-        };
-        expect(getAPIKey(headers)).toBe("wrong-key");
-    });
 });
